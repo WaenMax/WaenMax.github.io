@@ -19,7 +19,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://WaenMax.github.io/tags/"/>
+    <link rel="canonical" href="http://WaenMax.github.io/2024/11/02/特征工程/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -28,15 +28,15 @@
     
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://waenmax.github.io/tags/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正义铁拳的博客">
+<meta property="og:url" content="http://waenmax.github.io/2024/11/02/%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B/index.html">
 <meta property="og:site_name" content="正义铁拳的博客">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://waenmax.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2025-01-16T08:46:36.000Z">
-<meta property="article:modified_time" content="2025-01-16T09:17:45.799Z">
+<meta property="article:published_time" content="2024-11-02T07:36:53.174Z">
+<meta property="article:modified_time" content="2024-11-02T07:46:04.222Z">
 <meta property="article:author" content="正义铁拳">
 <meta property="article:tag" content="web,misc,CTF,大学生数学建模">
 <meta name="twitter:card" content="summary">
@@ -52,7 +52,7 @@
     
     <title>
         
-            标签 | 正义铁拳的博客
+            正义铁拳的博客 - 0fSAYA
         
     </title>
 
@@ -228,29 +228,204 @@
 			
 
 			<div class="main-content">
-				<div class="page-template-container">
-	
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
 
-	
-	
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3"></h1>
+			</div>
+			
+		</div>
 
-	
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/hellokitty.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">正义铁拳</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2024-11-02 15:36:53</span>
+        <span class="mobile">2024-11-02 15:36:53</span>
+        <span class="hover-info">创建</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2024-11-02 15:46:04</span>
+            <span class="mobile">2024-11-02 15:46:04</span>
+            <span class="hover-info">更新</span>
+        </span>
+    
 
-	<div class="page-template-content markdown-body">
+    
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>806 字</span>
+        </span>
+    
+    
+        <span class="article-min2read article-meta-item">
+            <i class="fa-regular fa-clock"></i>&nbsp;<span>2 分钟</span>
+        </span>
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
 		
 
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<h1 id="特征工程"><a href="#特征工程" class="headerlink" title="特征工程"></a>特征工程</h1><h3 id="数据集构建"><a href="#数据集构建" class="headerlink" title="数据集构建"></a>数据集构建</h3><p>采用将自动特征提取与特征工程方法结合的方式，再通过扩维和随机森林特征选取来构建整个用于训练的数据集。</p>
+<h4 id="步骤-1-采用卷积神经网络从流量图片中自动提取特征向量。"><a href="#步骤-1-采用卷积神经网络从流量图片中自动提取特征向量。" class="headerlink" title="步骤 1 采用卷积神经网络从流量图片中自动提取特征向量。"></a>步骤 1 采用卷积神经网络从流量图片中自动提取特征向量。</h4><p>采用的 CNN 结构的第一层为卷积层，采用 32 个通道的 5x5 的卷积核进行特征提取，第二层是一个 2x2 的 max pooling 层，第三层为一个采用64个通道的 5x5 卷积核的卷积层，第四层是一个 2x2 的 maxpooling 层，第五层为一个具有 1024 个节点的全连接层，作为特征向量的输出，最后将输出一个 1024 维的特征向量。</p>
+<h4 id="步骤-2-通过特征工程选取特征："><a href="#步骤-2-通过特征工程选取特征：" class="headerlink" title="步骤 2 通过特征工程选取特征："></a>步骤 2 通过特征工程选取特征：</h4><p>1）一个会话流的 metadata 信息，包括入方向字节数、出方向字节数、入方向包数、出方向包数、源&#x2F;目的端口、会话的总时长（秒），并将这些特征进行标准化处理；<br>2）会话前 50 个数据包的长度和到达间隔的转换概率矩阵；<br>3）字节分布向量，使用一个长度为 256 的数组，用来存储每个数据包中每个字节对应的值出现的概率，该概率值等于每个字节值出现的次数除以该数据包中的总字节数。<br>4）未加密部分的 TLS 协议头信息，包括从客户端的 TLS hello 消息中获取的 TLS 版本号、密钥算法套件的序列等信息、从服务器端的 TLS hello 消息中获取的 TLS 扩展信息（TLSextensions）、客户端公钥长度、RSA 加密算法文本或 DH&#x2F;ECDH 公钥等信息。</p>
+<h4 id="步骤-3-基于随机森林的特征选择"><a href="#步骤-3-基于随机森林的特征选择" class="headerlink" title="步骤 3 基于随机森林的特征选择"></a>步骤 3 基于随机森林的特征选择</h4><p>1）用前两个步骤生成的特征数据集构建随机森林；</p>
+<p>2）计算每个决策树的袋外误差 err1，对于第 i 个特征，随机改变其在所有样本中的值，并再次计算该决策树的袋外误差 err2，求得第 i 个特征的重要性权值w<br>$$<br>\bar{w} &#x3D; \frac{1}{n} \sum_{k&#x3D;1}^{n} (\text{err2} - \text{err1})<br>$$</p>
+<p>这里 n 是决策树的个数；</p>
+<p>3）对计算出的特征重要性权值进行排序，删除重要度最低的 t 个特征；</p>
+<p>4）重复 2-3 步，直到剩余 m 个特征。</p>
+<p>通过以上的三个特征工程的步骤能够使得生成的特征数据集合具有较高的应用场景适应能力和模型泛化能力。该特征数据集合对协议特征和会话统计特征都具有较好的覆盖度，并且以深度学习方法实现的自动特征提取还能够增加更多不可直接观测和直观选取的具有隐藏规律的特征，通过随机森林方法进行特征选择后，有效地将这两部分特征工程中不适应场景的特征数据去除，从而降低过拟合的风险，并且提高了特征对模型稳定性和性能的贡献度。</p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>标题:</strong> </li>
+        <li><strong>作者:</strong> 正义铁拳</li>
+        <li><strong>创建于
+                :</strong> 2024-11-02 15:36:53</li>
+        
+            <li>
+                <strong>更新于
+                    :</strong> 2024-11-02 15:46:04
+            </li>
+        
+        <li>
+            <strong>链接:</strong> https://waenmax.github.io/2024/11/02/特征工程/
+        </li>
+        <li>
+            <strong>
+                版权声明:
+            </strong>
+            
+
+            
+                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+
+		
+
+		
+		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
+			
+			
+			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
+				<a class="next" rel="next" href="/2024/10/30/%E6%96%B0%E5%9E%8B%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E4%B8%8B%E7%9A%84%E5%8A%A0%E5%AF%86%E7%BD%91%E7%BB%9C%E6%B5%81%E9%87%8F%E7%B2%BE%E7%BB%86%E5%8C%96%E5%88%86%E7%B1%BB%E6%96%B9%E6%B3%95%E7%A0%94%E7%A9%B6/">
+					<span class="title flex justify-center items-center">
+						<span class="post-nav-title-item"></span>
+						<span class="post-nav-item">下一篇</span>
+					</span>
+					<span class="right arrow-icon flex justify-center items-center">
+						<i class="fa-solid fa-chevron-right"></i>
+					</span>
+				</a>
+			</div>
+			
+		</div>
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        评论
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
 		
 	</div>
 
-	<div class="page-template-comments">
-		
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">目录</div>
+		<div class="page-title"></div>
+		<ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B"><span class="nav-text">特征工程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E6%8D%AE%E9%9B%86%E6%9E%84%E5%BB%BA"><span class="nav-text">数据集构建</span></a></li></ol></li></ol></li></ol>
+
 	</div>
 </div>
-
-<div class="paginator">
+	</div>
 	
 </div>
-  
 			</div>
 
 			
@@ -332,6 +507,26 @@
 		</div>
 	</div>
 
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
 	
 
 	<div class="right-side-tools-container">
@@ -423,6 +618,7 @@
         containers: ["#swup"],
     });
 </script>
+
 
 
 
